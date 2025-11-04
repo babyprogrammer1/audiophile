@@ -5,6 +5,10 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Serve and build using relative paths so deployed static assets work
+  // correctly when the site is served from different hosts or rewritten
+  // routes (helps avoid blank pages caused by absolute `/assets/...` URLs).
+  base: './',
   server: {
     host: "::",
     port: 8080,

@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function DevAssets() {
-  // Import all assets as URLs using Vite glob
-  const modules = import.meta.glob('/src/assets/assets/**', { as: 'url', eager: true }) as Record<string, string>;
+  // Import all assets as URLs using Vite glob (updated: use query + import)
+  const modules = import.meta.glob('/src/assets/assets/**', { query: '?url', import: 'default', eager: true }) as Record<string, string>;
 
   const images = Object.entries(modules)
     .filter(([path]) => /\.(png|jpe?g|svg|gif)$/i.test(path))
