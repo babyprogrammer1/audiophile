@@ -16,13 +16,13 @@ export default function Footer() {
             <div></div>
             <div className="flex gap-4 transform md:translate-x-4">
               <a href="#" className="text-gray-400 hover:text-accent transition">
-              <img src="src/assets/assets/shared/desktop/icon-facebook.svg" alt="Facebook" />
+              <img src="./assets/shared/desktop/icon-facebook.svg" alt="Facebook" />
               </a>
               <a href="#" className="text-gray-400 hover:text-accent transition">
-              <img src="src/assets/assets/shared/desktop/icon-twitter.svg" alt="Twitter" />
+              <img src="./assets/shared/desktop/icon-twitter.svg" alt="Twitter" />
               </a>
               <a href="#" className="text-gray-400 hover:text-accent transition">
-              <img src="src/assets/assets/shared/desktop/icon-instagram.svg" alt="Instagram" />
+              <img src="./assets/shared/desktop/icon-instagram.svg" alt="Instagram" />
               </a>
             </div>
             </div>

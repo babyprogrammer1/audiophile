@@ -33,9 +33,9 @@ function getProductGallery(productId: string) {
   const folder = getProductAssetFolder(productId);
   if (!folder) return [];
   return [
-    `/src/assets/assets/${folder}/desktop/image-gallery-1.jpg`,
-    `/src/assets/assets/${folder}/desktop/image-gallery-2.jpg`,
-    `/src/assets/assets/${folder}/desktop/image-gallery-3.jpg`,
+    `/assets/${folder}/desktop/image-gallery-1.jpg`,
+    `/assets/${folder}/desktop/image-gallery-2.jpg`,
+    `/assets/${folder}/desktop/image-gallery-3.jpg`,
   ];
 }
 
@@ -117,7 +117,7 @@ export default function ProductDetail() {
                 <div className="w-full max-w-md sm:max-w-lg aspect-square bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden mx-auto">
                   {getProductAssetFolder(product.id) ? (
                     <img
-                      src={`/src/assets/assets/${getProductAssetFolder(product.id)}/desktop/image-product.jpg`}
+                      src={`/assets/${getProductAssetFolder(product.id)}/desktop/image-product.jpg`}
                       alt={product.name}
                       className="object-contain w-full h-full"
                     />
@@ -298,7 +298,7 @@ export default function ProductDetail() {
                     <div className="bg-gray-100 rounded-lg p-4 mb-6 flex items-center justify-center aspect-[4/3] group-hover:opacity-75 transition">
                       {getProductAssetFolder(relatedProduct.id) ? (
                         <img
-                          src={`/src/assets/assets/${getProductAssetFolder(relatedProduct.id)}/desktop/image-category-page-preview.jpg`}
+                          src={`/assets/${getProductAssetFolder(relatedProduct.id)}/desktop/image-category-page-preview.jpg`}
                           alt={relatedProduct.name}
                           className="max-w-full max-h-full object-contain rounded-lg"
                         />

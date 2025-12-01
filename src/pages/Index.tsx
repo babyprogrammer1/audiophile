@@ -35,7 +35,7 @@ export default function Index() {
               <div className="flex items-center justify-center">
                 <div className="h-auto md:h-[80vh] lg:h-[85vh] flex items-center justify-center rounded-lg w-full">
                   <img
-                    src="/src/assets/assets/home/desktop/Bitmap.png"
+                    src="/assets/home/desktop/Bitmap.png"
                     alt="XX99 Mark II"
                     loading="lazy"
                     className="object-contain w-full max-w-[420px] sm:max-w-[520px] md:max-w-none"
@@ -73,7 +73,7 @@ export default function Index() {
                 <div className="flex-1 flex items-center justify-center">
                   <div className="w-full max-w-[420px] md:max-w-[520px] lg:max-w-[620px] rounded-lg relative flex items-center justify-center z-20">
                     <img
-                      src="/src/assets/assets/home/desktop/image-removebg-preview.png"
+                      src="/assets/home/desktop/image-removebg-preview.png"
                       alt="ZX9 Speaker"
                       loading="lazy"
                       className="object-contain w-full h-auto"
@@ -106,7 +106,7 @@ export default function Index() {
             <div
               className="rounded-lg overflow-hidden bg-cover bg-center"
               style={{
-          backgroundImage: "url('/src/assets/assets/home/desktop/image-speaker-zx7.jpg')",
+          backgroundImage: "url('/assets/home/desktop/image-speaker-zx7.jpg')",
           minHeight: 320,
               }}
             >
@@ -139,7 +139,7 @@ export default function Index() {
                 <div className="flex items-center justify-center">
                   <div className="w-full max-w-md md:max-w-none rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/src/assets/assets/home/desktop/image-earphones-yx1.jpg"
+                      src="/assets/home/desktop/image-earphones-yx1.jpg"
                       alt="YX1 Earphones"
                       loading="lazy"
                       className="object-contain w-full h-auto"

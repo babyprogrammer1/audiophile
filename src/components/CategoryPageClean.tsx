@@ -28,13 +28,13 @@ function getCategoryHeroImage(category: string) {
   const key = category.toLowerCase();
   switch (key) {
     case "headphones":
-      return "/src/assets/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg";
+      return "./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg";
     case "speakers":
-      return "/src/assets/assets/product-zx9-speaker/desktop/image-product.jpg";
+      return "./assets/product-zx9-speaker/desktop/image-product.jpg";
     case "earphones":
-      return "/src/assets/assets/product-yx1-earphones/desktop/image-product.jpg";
+      return "./assets/product-yx1-earphones/desktop/image-product.jpg";
     default:
-      return "/src/assets/assets/shared/desktop/image-best-gear.jpg";
+      return "./assets/shared/desktop/image-best-gear.jpg";
   }
 }
 
@@ -84,7 +84,7 @@ export default function CategoryPage({ category, products }: CategoryPageProps) 
                     <div className="w-full aspect-square bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
                       {getProductAssetFolder(product.id) ? (
                         <img
-                          src={`/src/assets/assets/${getProductAssetFolder(product.id)}/desktop/image-category-page-preview.jpg`}
+                          src={`./assets/${getProductAssetFolder(product.id)}/desktop/image-category-page-preview.jpg`}
                           alt={product.name}
                           className="object-cover w-full h-full"
                         />

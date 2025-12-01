@@ -11,6 +11,7 @@ A production-ready starter for a React SPA with an integrated Express server. Th
 - Test runner: Vitest
 - Primary commands: `npm run dev`, `npm run build`, `npm start`, `npm test`, `npm run typecheck`
 - Dev server default port: 8080 (frontend + backend together)
+ - Vercel-ready: includes `vercel.json` and an `api/[...path].ts` serverless wrapper for Express
 
 This README documents how to set up, run, extend, and contribute to the project.
 
@@ -66,7 +67,6 @@ Top-level layout (abridged):
   - `server/routes/` — server route handlers (e.g. `demo.ts`)
 - `shared/` — TypeScript types shared by client & server (e.g. `shared/api.ts`)
 - `package.json` — scripts & dependencies
-- `vite.config.ts` / `vite.config.server.ts` — dev/production config
 
 In your working copy the client code lives under `src/` and images & assets are under `src/assets/`.
 
@@ -97,7 +97,6 @@ npm run dev
 
 What to expect:
 - Vite will start and also load the Express server integration.
-- Dev server typically runs on port 8080 (see `vite.config.server.ts` or `server/index.ts` to confirm).
 - Hot Module Replacement (HMR) available for client & server code.
 
 ---
@@ -119,6 +118,11 @@ npm start
 Notes:
 - The production server will serve the built client and run the Express endpoints defined in `server/`.
 - Check `server/index.ts` and `node-build.ts` for specifics about how the build and serve steps are implemented.
+- Build output notes:
+  - Client static files: `dist/spa` (contains `index.html` and `assets/`). This is the Output Directory to use for static hosts (Vercel/Render) or the `vercel.json` config.
+  - Server bundle: `dist/server` (contains `node-build.mjs`) — used by `npm start` which runs `node dist/server/node-build.mjs`.
+
+If you plan to deploy to Vercel, this repository already contains a `vercel.json` and a serverless wrapper at `api/[...path].ts` which mounts the Express app via `serverless-http`. See the "Deployment — Vercel" section below for details.
 
 ---
 
@@ -223,7 +227,6 @@ Add tests alongside modules or in a central `tests/` folder depending on your pr
 
 Common problems:
 
-- Port in use: If port 8080 is in use, either free it or change the dev server port in `vite.config.server.ts`.
 - Missing path aliases/types: If imports like `@shared/api` fail, ensure `tsconfig.json` has the path aliases and your editor/IDE is using the project TypeScript version.
 - HMR not updating server code: Server code changes may require a server restart depending on the integration. The dev server integration aims to reload server routes, but check console logs for instructions.
 
@@ -279,7 +282,7 @@ These steps help maintain stability and prevent regressions.
 ## A note about the included demo routes and assets
 
 - Server demo routes are in `server/routes/demo.ts`.
-- Mock data and product assets are in `src/assets/` (including `assets/db.json` used by the starter for demo purposes).
+- Mock data and product assets are in `./assets/` (including `assets/db.json` used by the starter for demo purposes).
 
 ---
 

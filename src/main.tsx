@@ -15,7 +15,6 @@ import Earphones from "./pages/Earphones";
 import ProductDetail from "./pages/ProductDetail";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
-import DevAssets from "./pages/DevAssets";
 import DevUI from "./pages/DevUI";
 
 const queryClient = new QueryClient();
@@ -30,7 +29,6 @@ const App = () => (
           <Cart />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/dev-assets" element={<DevAssets />} />
             <Route path="/dev-ui" element={<DevUI />} />
             <Route path="/headphones" element={<Headphones />} />
             <Route path="/speakers" element={<Speakers />} />

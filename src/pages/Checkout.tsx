@@ -281,7 +281,7 @@ export default function Checkout() {
                   </div>
                   <div className="flex gap-2">
                   <span>
-                    <img src="src/assets/assets/home/desktop/cash.svg" width={48} height={48} alt="" />
+                    <img src="/assets/home/desktop/cash.svg" width={48} height={48} alt="" />
                   </span>
                   <p>
                     The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.

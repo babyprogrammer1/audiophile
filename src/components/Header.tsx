@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 
-import logoUrl from "../assets/assets/shared/desktop/logo.svg";
-import cartIconUrl from "../assets/assets/shared/desktop/icon-cart.svg";
-import hamburgerUrl from "../assets/assets/shared/tablet/icon-hamburger.svg";
+import logoUrl from "/assets/shared/desktop/logo.svg";
+import cartIconUrl from "/assets/shared/desktop/icon-cart.svg";
+import hamburgerUrl from "/assets/shared/tablet/icon-hamburger.svg";
 
 export default function Header() {
   const { items, openCart } = useCart();

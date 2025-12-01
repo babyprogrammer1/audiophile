@@ -14,7 +14,7 @@ const OrderConfirmationModal: React.FC<Props> = ({ onClose, firstItemName, other
         {/* Icon */}
         <div className="flex justify-center mb-4">
           <div>
-            <img src="src/assets/assets/checkout/icon-order-confirmation.svg" width={64} height={64} alt="" />
+            <img src="/assets/checkout/icon-order-confirmation.svg" width={64} height={64} alt="" />
           </div>
         </div>
 

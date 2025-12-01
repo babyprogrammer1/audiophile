@@ -13,7 +13,7 @@ export default function SharedSections() {
               className="relative bg-gray-100 h-[204px] w-[350px] top-[59px] rounded-lg p-8 md:p-12 flex flex-col items-center justify-center text-center group transition"
             >
               <div className="absolute w-[400px] top-[-60px] md:w-40 md:h-40 rounded-lg flex items-center justify-center mb-12 group-hover:scale-105 transition">
-                <img src="/src/assets/assets/shared/desktop/image-category-thumbnail-headphones.png" alt="Headphones" width={150} height={200} style={{ transition: 'transform .25s ease' }} />
+                <img src="/assets/shared/desktop/image-category-thumbnail-headphones.png" alt="Headphones" width={150} height={200} style={{ transition: 'transform .25s ease' }} />
               </div>
               <h3 className="mt-12 text-lg md:text-xl font-bold mb-2 tracking-wide">
                 HEADPHONES
@@ -23,7 +23,7 @@ export default function SharedSections() {
                   SHOP
                 </p>
                 <span className="m-[4px]">
-                  <img src="src/assets/assets/shared/desktop/icon-arrow-right.svg" alt="" />
+                  <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="" />
                 </span>
               </div>
             </Link>
@@ -34,7 +34,7 @@ export default function SharedSections() {
               className="relative bg-gray-100 rounded-lg h-[204px] w-[350px] top-[59px] p-8 md:p-12 flex flex-col items-center justify-center text-center group transition"
             >
               <div className="absolute w-[400px] top-[-60px] md:w-40 md:h-40 rounded-lg flex items-center justify-center mb-12 group-hover:scale-105 transition">
-                <img src="/src/assets/assets/shared/desktop/image-category-thumbnail-speakers.png" alt="Speakers" width={150} height={200} style={{ transition: 'transform .25s ease' }} />
+                <img src="/assets/shared/desktop/image-category-thumbnail-speakers.png" alt="Speakers" width={150} height={200} style={{ transition: 'transform .25s ease' }} />
               </div>
               <h3 className="mt-12 text-lg md:text-xl font-bold mb-2 tracking-wide">
                 SPEAKERS
@@ -44,7 +44,7 @@ export default function SharedSections() {
                   SHOP
                 </p>
                 <span className="m-[4px]">
-                  <img src="src/assets/assets/shared/desktop/icon-arrow-right.svg" alt="" />
+                  <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="" />
                 </span>
               </div>
             </Link>
@@ -55,7 +55,7 @@ export default function SharedSections() {
               className="relative bg-gray-100 h-[204px] w-[350px] top-[59px] rounded-lg p-8 md:p-12 flex flex-col items-center justify-center text-center group transition"
             >
               <div className="absolute w-[400px] top-[-60px] md:w-40 md:h-40 rounded-lg flex items-center justify-center mb-12 group-hover:scale-105 transition">
-                <img src="/src/assets/assets/shared/desktop/image-category-thumbnail-earphones.png" alt="Earphones" width={150} height={200} style={{ transition: 'transform .25s ease' }} />
+                <img src="/assets/shared/desktop/image-category-thumbnail-earphones.png" alt="Earphones" width={150} height={200} style={{ transition: 'transform .25s ease' }} />
               </div>
               <h3 className="mt-12 text-lg md:text-xl font-bold mb-2 tracking-wide">
                 EARPHONES
@@ -65,7 +65,7 @@ export default function SharedSections() {
                   SHOP
                 </p>
                 <span className="m-[4px]">
-                  <img src="src/assets/assets/shared/desktop/icon-arrow-right.svg" alt="" />
+                  <img src="/assets/shared/desktop/icon-arrow-right.svg" alt="" />
                 </span>
               </div>
             </Link>

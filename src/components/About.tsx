@@ -17,7 +17,7 @@ export default function About() {
               
               <div className="flex items-center justify-center order-first md:order-last">
                 <div className="w-full aspect-square bg-gradient-to-b from-gray-400 to-gray-600 rounded-lg flex items-center justify-center">
-                  <img src="src/assets/assets/shared/desktop/image-best-gear.jpg" alt="Best Gear" className="w-full h-full object-cover rounded-lg" />
+                  <img src="./assets/shared/desktop/image-best-gear.jpg" alt="Best Gear" className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
             </div>
